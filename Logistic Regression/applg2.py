@@ -6,11 +6,11 @@ import numpy as np
 import pandas as pd
 
 # Load the trained model
-model = joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/second_logistic_regression_model_dropped_actual_delivery_dates.joblib")
-
+model_path = input("Enter the model path from the files folder")#joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/randomforestclassifier_dropped_actual_delivery_dates.joblib")
+model = joblib.load(model_path)
 # Load saved encoders and column structure
-label_encoders = joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/label_encoders_without_actual_delivery_date.pkl")  # Path to saved LabelEncoders
-
+label_encoders_path = input("Enter the label encoder path from the files folder") #joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/label_encoders_randomtreeclassifier.pkl")  # Path to saved LabelEncoders
+label_encoders = joblib.load(label_encoders_path)
 # Initialize FastAPI app
 app = FastAPI()
 
