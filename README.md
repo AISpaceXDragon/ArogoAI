@@ -187,7 +187,7 @@ The frontend is a simple Streamlit app that allows users to upload an image. Onc
    ```
   3.Then go the "Task 2" folder of this repository by running the following command:
   ```bash
-  cd Task 2
+  cd Task\ 2
   ```
   4.Then run the following command in terminal/command_prompt:
   ```bash
