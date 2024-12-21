@@ -68,11 +68,25 @@ The dataset includes the following features:
 
 2. Instructions for running the API:
    - Download or clone this repository and you will have the weights of the trained models along with the label encoders used while training.
-   - Input these file paths into the python file "applg2.py" and run the program.
+   - Run the following commands in terminal/command prompt:
+     ```bash
+     cd ArogoAI/Random\ Forest
+     ```
+     Run the above command if you want to run the Random Forest model via API.
+     ```bash
+     cd ArogoAI/Logistic\ Regression
+     ```
+     Run the above command if you want to run the Logistic Regression model via API.
+   - Input these file paths into the python file "applg2.py" and run the program by running the following command:
+     ```bash
+     python applg2.py
+     ```
+     The above command upon running will prompt for the file paths of the model and label encoder. These file paths could be obtained by going to the "files" folder and enter the paths to the script.
    - Run the following command from terminal/command prompt:
      ```bash
      uvicorn applg2:app --reload
      ```
+     This will start the API at "http://127.0.0.1:8000".
    - Then go the website "http://127.0.0.1:8000/docs" and give the input to the API. (OR)
    - Use the `/predict` endpoint to make predictions:
    - Example request:
@@ -187,7 +201,7 @@ The frontend is a simple Streamlit app that allows users to upload an image. Onc
    ```
   3.Then go the "Task 2" folder of this repository by running the following command:
   ```bash
-  cd Task\ 2
+  cd ArogoAI/Task\ 2
   ```
   4.Then run the following command in terminal/command_prompt:
   ```bash
