@@ -1,0 +1,11 @@
+streamlit
+pandas
+io
+fastapi
+joblib
+numpy
+Pillow
+requests
+flask
+transformers
+pydantic
