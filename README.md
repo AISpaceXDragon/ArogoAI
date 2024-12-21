@@ -194,20 +194,25 @@ The frontend is a simple Streamlit app that allows users to upload an image. Onc
 ### Backend Deployment:
 - The backend can be deployed locally or to a cloud platform (e.g., Heroku, AWS, or GCP).
 - Steps to deploy both backend and frontend locally:
+
   1.Clone this repository
+
   2.Install the required dependencies for the backend:
    ```bash
    pip install -r requirements.txt
    ```
+
   3.Then go the "Task 2" folder of this repository by running the following command:
   ```bash
   cd ArogoAI/Task\ 2
   ```
+
   4.Then run the following command in terminal/command_prompt:
   ```bash
   python app.py
   ```
-  The above command will start the API at the following address "http://127.0.0.1:8000".
+  The above command will prompt for the file paths of the model and label encoder.Enter them by going to the "files" folder of the current folder you are in,copying the addresses,pasting them in the prompted area of the terminal and the command will start the API at the following address "http://127.0.0.1:8000".
+
   5.Open a new command prompt/terminal window and run the following commands:
   ```bash
   python app_ui.py
