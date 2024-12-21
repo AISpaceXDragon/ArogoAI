@@ -6,12 +6,15 @@ import numpy as np
 import pandas as pd
 
 # Load the trained model
-model = joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/second_logistic_regression_model.joblib")
+model_path = input("Enter the second_logistic_regression_model.joblib file from the files folder of this repository's Logistic Regression folder") 
+#joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/second_logistic_regression_model.joblib")
+model = joblib.load(model_path)
 
 # Load saved encoders and column structure
-label_encoders = joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/label_encoders.pkl")  # Path to saved LabelEncoders
-
-# Initialize FastAPI app
+label_encoders_path = input("Enter the label_encoders.pkl file from the files folder of this repository's Logistic Regression folder")
+#joblib.load("/Users/srimanthdhondy/Programs/Projects/ArogoAI_task/label_encoders.pkl")  # Path to saved LabelEncoders
+label_encoders = joblib.load(label_encoders_path)
+# Initialize FastAPI app 
 app = FastAPI()
 
 # Define the request schema
